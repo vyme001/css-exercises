@@ -1,29 +1,67 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
   min-height: 100vh;
 }
 
 .header {
-  height: 72px;
+  width: 100%;
+  height: 20px;
   background: darkmagenta;
   color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  padding: 20px;
 }
 
-.footer {
-  height: 72px;
-  background: #eee;
-  color: darkmagenta;
+.content {
+  display: flex;
 }
 
 .sidebar {
+  height: 100vh;
   width: 300px;
   background: royalblue;
-  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0 50px 0 0;
+  width: max-content;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: whitesmoke;
+  font-size: larger;
+  text-decoration: none;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
 }
 
 .card {
+  margin: 10px;
   border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
+  max-width: 250px;
+  max-height: 300px;
+}
+
+.footer {
+  height: 20px;
+  padding: 20px;
+  background: #eee;
+  color: darkmagenta;
+  text-align: center;
 }
